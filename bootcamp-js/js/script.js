@@ -27,3 +27,14 @@ console.log(iLikePie);
 
 var string = "hahahaha";
 var newString = new String("hahahaha");
+
+
+var myArray = ["Hello World", 22, true, null];
+console.log(myArray);
+
+var myObject = {
+  myString: "Hello World", magicNumber: 42
+};
+
+
+let helloMessage = alert("Hey, there! My book is only $9.99...");
