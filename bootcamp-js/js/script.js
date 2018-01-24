@@ -37,4 +37,17 @@ var myObject = {
 };
 
 
-let helloMessage = alert("Hey, there! My book is only $9.99...");
+// let helloMessage = alert("Hey, there! My book is only $9.99...");
+//
+//
+// let promptMessage = prompt("Tell me the password...","password");
+// console.log(promptMessage);
+
+
+let firstName = prompt("What is your first name?");
+let lastName  = prompt("What is your last name?");
+console.log(firstName);
+let myMessage = alert("Your last name is " + lastName);
+
+
+let birthday = prompt("What's your birhday?", "Please enter your birthday");
