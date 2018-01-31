@@ -22,6 +22,15 @@ var movie3 = ["Mad Max", "Furiosa"];
 var movie4 = ["The Dark Knight", "Batman"];
 var movie5 = ["Serenty", "Malcolm Reynolds"];
 
-var favoriteMovies = [movie1[0], movie2[0], movie3[0], movie4[0], movie5[0]];
-alert("My favorite movies are " + favoriteMovies);
+var favoriteMovies = [];
+favoriteMovies.push(movie1, movie2, movie3, movie4, movie5);
+
+var topMovieTitles = [];
+topMovieTitles.push(favoriteMovies[0][0], favoriteMovies[1][0], favoriteMovies[2][0], favoriteMovies[3][0], favoriteMovies[4][0]);
+alert("My favorite movies are " + topMovieTitles[0] + ", " + topMovieTitles[1] + ", " + topMovieTitles[2] + ", "  + topMovieTitles[3] + ", " + topMovieTitles[4]);
+
+var worseAndBest = [favoriteMovies[0][0], favoriteMovies[4][0]];
+
+console.log("The best movie ever is " + worseAndBest[0] + " and " + "the worst movie ever is " + worseAndBest[1]);
+
 alert("Array length is " + favoriteMovies.length);
