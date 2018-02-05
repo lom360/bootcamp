@@ -61,10 +61,13 @@
 
 
 /****************************DAY 5 TAKE HOME BELOW ****************************/
+
+// Find the square of a number
 var squareNum = function(x) {
     return x * x;
 }
 
+// Alerts if number, calls function again if NaN
 var checkIfNum = function(number) {
     if(isNaN(number)) {
         checkIfNum(prompt("Please give a real number"));
@@ -73,6 +76,7 @@ var checkIfNum = function(number) {
     }
 }
 
+// Capitalize first letter and adds period at the end if there isn't
 var makeSentence = function(str) {
     str = str.charAt(0).toUpperCase() + str.slice(1);
     if(str[str.length - 1] != '.') {
@@ -82,6 +86,7 @@ var makeSentence = function(str) {
     }
 }
 
+// Flips the first half of string with the second half
 var flipString = function(myStr) {
     halfLength = myStr.length/2;
     temp1 = myStr.substr(0, halfLength);
@@ -90,6 +95,7 @@ var flipString = function(myStr) {
     return myStr;
 }
 
+// Checks if a string is a Palindrom or not
 var isPalindrome = function(checkString) {
     var cmpString = "";
     for(let i = checkString.length - 1; i >= 0; i--){
@@ -102,10 +108,12 @@ var isPalindrome = function(checkString) {
     }
 }
 
+// function call
 console.log(squareNum(3));
 checkIfNum(10);
 checkIfNum(NaN);
 console.log(makeSentence("don't be a wise guy"));
+console.log(makeSentence("Time to rest."))
 console.log(flipString("abcdef"));
 console.log(isPalindrome("racecar"));
 console.log(isPalindrome("hello"));
