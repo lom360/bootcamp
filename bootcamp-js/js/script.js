@@ -40,9 +40,6 @@
 //
 // alert(message);
 
-
-
-
 // var maxAge = prompt("How long do you think you'll live.");
 // const yourAge = prompt("How old are you now?");
 // const neededItems = prompt("How many bottles of coconut water you consume per day.");
@@ -63,6 +60,7 @@
 // calcLifeSupply(yourAge, neededItems);
 
 
+/****************************DAY 5 TAKE HOME BELOW ****************************/
 var squareNum = function(x) {
     return x * x;
 }
