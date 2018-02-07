@@ -117,3 +117,20 @@ console.log(makeSentence("Time to rest."))
 console.log(flipString("abcdef"));
 console.log(isPalindrome("racecar"));
 console.log(isPalindrome("hello"));
+
+
+myArray = [3, 6, -2, -5, 7, 3];
+array2 = [-23, 4, -3, 8, -12];
+
+var highestPair = function(inputArray) {
+    var maxNum = -1000;
+    for(i = 0; i < inputArray.length - 1; i++){
+        if(maxNum < (inputArray[i] * inputArray[i+1])){
+            maxNum = inputArray[i] * inputArray[i+1];
+        }
+    }
+    return maxNum;
+}
+
+console.log(highestPair(myArray));
+console.log(highestPair(array2));
